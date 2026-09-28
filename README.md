@@ -178,3 +178,30 @@ Permite registrar un nuevo cliente.
   "telefono": "3001234567",
   "ciudad": "Palmira"
 }
+
+
+---
+
+## 5. Bocetos de las pantallas
+
+Los siguientes bocetos representan las principales pantallas propuestas para MEB Gestión, tomando como referencia el proceso comercial de Muebles El Bosque.
+
+### 5.1 Inicio de sesión
+
+![Inicio de sesión](docs/bocetos/01_inicio_sesion.png)
+
+### 5.2 Panel principal
+
+![Panel principal](docs/bocetos/02_panel_principal.png)
+
+### 5.3 Registro de solicitud
+
+![Registro de solicitud](docs/bocetos/03_registrar_solicitud.png)
+
+### 5.4 Visita y diagnóstico
+
+![Visita y diagnóstico](docs/bocetos/04_visita_diagnostico.png)
+
+### 5.5 Crear cotización
+
+![Crear cotización](docs/bocetos/05_crear_cotizacion.png)
