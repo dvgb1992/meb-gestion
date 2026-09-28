@@ -46,3 +46,112 @@ El sistema permitirá gestionar solicitudes relacionadas con:
 - Taponado
 - Tapizado
 - Otros trabajos
+
+
+
+## 2. Backlog
+
+### HU-01 - Registrar cliente
+
+**Como** asesora comercial,  
+**quiero** registrar los datos del cliente,  
+**para** realizar seguimiento a su solicitud.
+
+**Criterios de aceptación:**
+- Registrar nombre del cliente.
+- Registrar número de teléfono.
+- Registrar ubicación.
+- Indicar si el cliente se encuentra en Palmira.
+- Asociar el cliente con una o varias solicitudes.
+
+---
+
+### HU-02 - Registrar solicitud
+
+**Como** asesora comercial,  
+**quiero** registrar la solicitud del cliente,  
+**para** identificar qué tipo de trabajo necesita.
+
+**Criterios de aceptación:**
+- Seleccionar el tipo de servicio.
+- Registrar el tipo de mueble.
+- Registrar la descripción del trabajo solicitado.
+- Asociar la solicitud con un cliente.
+- Asignar un estado inicial a la solicitud.
+
+---
+
+### HU-03 - Determinar si requiere visita
+
+**Como** asesora comercial,  
+**quiero** indicar si una solicitud requiere visita,  
+**para** organizar correctamente el proceso de atención.
+
+**Criterios de aceptación:**
+- Indicar si la solicitud requiere visita.
+- Permitir continuar directamente a la cotización cuando no se requiere visita.
+- Permitir programar una visita cuando sea necesaria.
+
+---
+
+### HU-04 - Programar visita y registrar diagnóstico
+
+**Como** responsable de la visita,  
+**quiero** programar la visita y registrar las características y condiciones del mueble,  
+**para** disponer de la información necesaria para elaborar la cotización.
+
+**Criterios de aceptación:**
+- Registrar fecha y hora de la visita.
+- Registrar dirección.
+- Asociar la visita con una solicitud.
+- Registrar medidas del mueble.
+- Registrar tipo de artículo y estado.
+- Registrar observaciones.
+- Adjuntar fotografías.
+- Registrar necesidades de pintura, tapizado o taponado.
+- Registrar daños estructurales o presencia de gorgojo cuando corresponda.
+
+---
+
+### HU-05 - Crear cotización
+
+**Como** asesora comercial,  
+**quiero** elaborar una cotización con el apoyo del trabajador especializado,  
+**para** presentar al cliente el valor del servicio.
+
+**Criterios de aceptación:**
+- Asociar la cotización con una solicitud.
+- Registrar los trabajos requeridos.
+- Registrar los valores correspondientes.
+- Calcular el valor total.
+- Registrar las condiciones de pago.
+- Permitir generar la información necesaria para enviar la cotización al cliente.
+
+---
+
+### HU-06 - Registrar respuesta del cliente
+
+**Como** asesora comercial,  
+**quiero** registrar si el cliente acepta o rechaza la cotización,  
+**para** actualizar el estado de la solicitud y registrar el anticipo requerido.
+
+**Criterios de aceptación:**
+- Registrar la cotización como aprobada o rechazada.
+- Registrar la respuesta del cliente.
+- Actualizar el estado de la solicitud.
+- Cuando la cotización sea aprobada, calcular el 50 % correspondiente al anticipo.
+- Registrar si el anticipo fue recibido.
+- Identificar el 50 % restante pendiente.
+
+---
+
+### HU-07 - Consultar estado de la solicitud
+
+**Como** cliente,  
+**quiero** conocer el estado de mi solicitud,  
+**para** saber en qué etapa se encuentra mi servicio.
+
+**Criterios de aceptación:**
+- Mostrar el estado actual de la solicitud.
+- Mostrar la etapa del proceso.
+- Permitir consultar la información básica de la solicitud.
