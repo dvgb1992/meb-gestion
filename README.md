@@ -155,3 +155,26 @@ El sistema permitirá gestionar solicitudes relacionadas con:
 - Mostrar el estado actual de la solicitud.
 - Mostrar la etapa del proceso.
 - Permitir consultar la información básica de la solicitud.
+
+---
+
+## 3. Contrato de la API
+
+La API permitirá gestionar la información principal del sistema MEB Gestión mediante recursos relacionados con clientes, solicitudes, visitas, diagnósticos y cotizaciones.
+
+### Recurso: Clientes
+
+#### POST /api/clientes
+
+Permite registrar un nuevo cliente.
+
+**Código de respuesta:** `201 Created`
+
+**Ejemplo:**
+
+```json
+{
+  "nombre": "María López",
+  "telefono": "3001234567",
+  "ciudad": "Palmira"
+}
