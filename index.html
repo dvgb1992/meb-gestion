@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de gestión de solicitudes de Muebles El Bosque">
+    <title>MEB Gestión | Muebles El Bosque</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="marca">
+            <h1>MEB Gestión</h1>
+            <p>Muebles El Bosque</p>
+        </div>
+        <nav aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#solicitudes">Solicitudes</a>
+            <a href="#nueva-solicitud">Nueva solicitud</a>
+        </nav>
+    </header>
+
+    <main id="inicio" class="contenedor">
+        <section class="bienvenida">
+            <p class="etiqueta">GESTIÓN DE SERVICIOS</p>
+            <h2>Bienvenido a MEB Gestión</h2>
+            <p>Organiza y consulta las solicitudes de los clientes de Muebles El Bosque.</p>
+        </section>
+
+        <section id="solicitudes" aria-labelledby="titulo-solicitudes">
+            <div class="titulo-seccion">
+                <div>
+                    <h2 id="titulo-solicitudes">Solicitudes de servicio</h2>
+                    <p>Consulta el estado de cada solicitud.</p>
+                </div>
+                <span id="contador" class="contador">0 solicitudes</span>
+            </div>
+
+            <label for="busqueda">Buscar solicitud</label>
+            <input type="search" id="busqueda" placeholder="Buscar por cliente, servicio o estado">
+
+            <p id="mensaje-carga" role="status">Cargando solicitudes...</p>
+            <div id="lista-solicitudes" class="rejilla-solicitudes"></div>
+            <p id="mensaje-vacio" hidden>No hay solicitudes para mostrar.</p>
+            <p id="mensaje-error" class="error" role="alert" hidden></p>
+        </section>
+
+        <section id="nueva-solicitud" class="panel-formulario">
+            <h2>Registrar nueva solicitud</h2>
+            <p>Completa los datos para registrar un servicio.</p>
+
+            <form id="formulario-solicitud">
+                <div class="campo">
+                    <label for="cliente">Nombre del cliente</label>
+                    <input id="cliente" name="cliente" type="text"
+                           minlength="2" maxlength="60" required
+                           placeholder="Ej. María Gómez">
+                </div>
+
+                <div class="campo">
+                    <label for="servicio">Tipo de servicio</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="Restauración">Restauración</option>
+                        <option value="Fabricación">Fabricación de muebles</option>
+                        <option value="Pintura">Pintura</option>
+                        <option value="Tapizado">Tapizado</option>
+                        <option value="Trabajo en madera">Trabajo en madera</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion"
+                              minlength="5" maxlength="250" required
+                              placeholder="Describe brevemente el trabajo solicitado"></textarea>
+                </div>
+
+                <button type="submit">Registrar solicitud</button>
+                <p id="mensaje-formulario" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 MEB Gestión · Muebles El Bosque</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
