@@ -4,89 +4,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistema de gestión de solicitudes de Muebles El Bosque">
+    <meta name="theme-color" content="#24392e">
+    <meta name="description" content="Muebles El Bosque: restauración, pintura, tapizado y fabricación de muebles en madera.">
     <title>MEB Gestión | Muebles El Bosque</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+
+    <div class="franja-superior">
+        HECHO CON MADERA, CUIDADO Y CREATIVIDAD
+        <span>✳</span>
+        MUEBLES CON UNA NUEVA HISTORIA
+    </div>
+
     <header class="encabezado">
-        <div class="marca">
-            <h1>MEB Gestión</h1>
-            <p>Muebles El Bosque</p>
-        </div>
+        <a class="marca" href="#inicio" aria-label="MEB Gestión, inicio">
+            <div class="logo-nuevo" aria-label="Emblema MEB">
+                <span class="logo-m">M</span>
+                <span class="logo-b">B</span>
+                <span class="logo-mesa"></span>
+            </div>
+
+            <div class="marca-texto">
+                <strong>MEB <span>Gestión</span></strong>
+                <small>MUEBLES EL BOSQUE</small>
+            </div>
+        </a>
+
         <nav aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nuestra esencia</a>
+            <a href="#servicios">Servicios</a>
             <a href="#solicitudes">Solicitudes</a>
-            <a href="#nueva-solicitud">Nueva solicitud</a>
+            <a class="nav-contacto" href="#nueva-solicitud">Hablemos ↗</a>
         </nav>
     </header>
 
-    <main id="inicio" class="contenedor">
-        <section class="bienvenida">
-            <p class="etiqueta">GESTIÓN DE SERVICIOS</p>
-            <h2>Bienvenido a MEB Gestión</h2>
-            <p>Organiza y consulta las solicitudes de los clientes de Muebles El Bosque.</p>
-        </section>
-
-        <section id="solicitudes" aria-labelledby="titulo-solicitudes">
-            <div class="titulo-seccion">
-                <div>
-                    <h2 id="titulo-solicitudes">Solicitudes de servicio</h2>
-                    <p>Consulta el estado de cada solicitud.</p>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-foto">
+                <img
+                    src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1800&q=85"
+                    alt="Muebles de madera en un espacio de diseño cálido y natural">
+                <div class="foto-sello">
+                    <span>✳</span>
+                    <small>AMAMOS<br>LA MADERA</small>
                 </div>
-                <span id="contador" class="contador">0 solicitudes</span>
             </div>
 
-            <label for="busqueda">Buscar solicitud</label>
-            <input type="search" id="busqueda" placeholder="Buscar por cliente, servicio o estado">
+            <div class="hero-contenido">
+                <span class="etiqueta"><span class="punto"></span> CARPINTERÍA CON ALMA</span>
 
-            <p id="mensaje-carga" role="status">Cargando solicitudes...</p>
-            <div id="lista-solicitudes" class="rejilla-solicitudes"></div>
-            <p id="mensaje-vacio" hidden>No hay solicitudes para mostrar.</p>
-            <p id="mensaje-error" class="error" role="alert" hidden></p>
+                <h1>La madera<br>tiene otra <em>vida.</em></h1>
+
+                <p class="hero-descripcion">
+                    Restauramos, transformamos y creamos muebles para que tus espacios
+                    vuelvan a contar historias bonitas.
+                </p>
+
+                <div class="hero-botones">
+                    <a class="boton boton-verde" href="#servicios">
+                        Descubre lo que hacemos <span>↗</span>
+                    </a>
+                    <a class="boton boton-claro" href="#nueva-solicitud">
+                        Cuéntanos tu idea
+                    </a>
+                </div>
+
+                <div class="hero-firma">
+                    <span class="firma-linea"></span>
+                    <span>Artesanía · Naturaleza · Nuevas historias</span>
+                </div>
+            </div>
+
+            <div class="hero-numero">01 / MEB</div>
         </section>
 
-        <section id="nueva-solicitud" class="panel-formulario">
-            <h2>Registrar nueva solicitud</h2>
-            <p>Completa los datos para registrar un servicio.</p>
+        <section class="cinta">
+            <span>MADERA NATURAL</span><b>✳</b>
+            <span>RESTAURACIÓN</span><b>✳</b>
+            <span>DISEÑO CON SENTIDO</span><b>✳</b>
+            <span>HECHO CON CUIDADO</span>
+        </section>
 
-            <form id="formulario-solicitud">
-                <div class="campo">
-                    <label for="cliente">Nombre del cliente</label>
-                    <input id="cliente" name="cliente" type="text"
-                           minlength="2" maxlength="60" required
-                           placeholder="Ej. María Gómez">
+        <section class="intro seccion" id="nosotros">
+            <div class="intro-titulo">
+                <span class="sobrelinea">ESTO ES MUEBLES EL BOSQUE</span>
+                <h2>Las cosas bonitas<br>merecen <em>otra oportunidad.</em></h2>
+            </div>
+
+            <div class="intro-texto">
+                <p>
+                    Creemos que un mueble no tiene que terminar su historia cuando
+                    pierde su brillo. A veces necesita unas manos expertas, un buen
+                    acabado y un poquito de amor.
+                </p>
+                <p>
+                    En Muebles El Bosque trabajamos la madera para recuperar su belleza,
+                    renovar tus espacios y darle vida a nuevas ideas.
+                </p>
+                <a class="enlace-flecha" href="#servicios">
+                    Conoce nuestros servicios <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <div class="galeria-imagen galeria-grande">
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+                    alt="Sala acogedora con muebles y elementos naturales">
+                <span class="foto-etiqueta">ESPACIOS CON CALMA</span>
+            </div>
+
+            <div class="galeria-imagen galeria-pequena">
+                <img
+                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85"
+                    alt="Detalles decorativos de madera y materiales naturales">
+                <span class="foto-etiqueta">DETALLES QUE ENAMORAN</span>
+            </div>
+
+            <div class="galeria-frase">
+                <span class="hojita">✳</span>
+                <p>Menos desperdicio.<br>Más historias en cada mueble.</p>
+                <small>UNA FORMA MÁS BONITA DE RENOVAR</small>
+            </div>
+        </section>
+
+        <section class="servicios seccion" id="servicios">
+            <div class="seccion-cabecera">
+                <div>
+                    <span class="sobrelinea">MANOS A LA OBRA</span>
+                    <h2>¿Qué hacemos <em>por ti?</em></h2>
                 </div>
+                <p>
+                    Cada mueble tiene su personalidad.
+                    Nosotros ayudamos a que vuelva a brillar.
+                </p>
+            </div>
 
-                <div class="campo">
-                    <label for="servicio">Tipo de servicio</label>
-                    <select id="servicio" name="servicio" required>
-                        <option value="">Selecciona un servicio</option>
-                        <option value="Restauración">Restauración</option>
-                        <option value="Fabricación">Fabricación de muebles</option>
-                        <option value="Pintura">Pintura</option>
-                        <option value="Tapizado">Tapizado</option>
-                        <option value="Trabajo en madera">Trabajo en madera</option>
-                    </select>
+            <div class="servicios-grid">
+                <article class="servicio-card">
+                    <div class="servicio-foto">
+                        <img
+                            src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+                            alt="Muebles de madera en un ambiente cálido">
+                        <span class="servicio-numero">01</span>
+                    </div>
+                    <div class="servicio-info">
+                        <span class="mini-etiqueta">NUEVA VIDA</span>
+                        <h3>Restauración</h3>
+                        <p>Recuperamos muebles que merecen una segunda oportunidad.</p>
+                        <a href="#nueva-solicitud">Quiero restaurar ↗</a>
+                    </div>
+                </article>
+
+                <article class="servicio-card">
+                    <div class="servicio-foto">
+                        <img
+                            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+                            alt="Interior con muebles, madera y decoración natural">
+                        <span class="servicio-numero">02</span>
+                    </div>
+                    <div class="servicio-info">
+                        <span class="mini-etiqueta">NUEVO LOOK</span>
+                        <h3>Pintura y acabados</h3>
+                        <p>Renovamos colores, superficies y acabados para darles otro aire.</p>
+                        <a href="#nueva-solicitud">Renovar mi mueble ↗</a>
+                    </div>
+                </article>
+
+                <article class="servicio-card">
+                    <div class="servicio-foto">
+                        <img
+                            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                            alt="Sofá contemporáneo en un ambiente acogedor">
+                        <span class="servicio-numero">03</span>
+                    </div>
+                    <div class="servicio-info">
+                        <span class="mini-etiqueta">MÁS CONFORT</span>
+                        <h3>Tapizado</h3>
+                        <p>Renovamos la apariencia y el confort de tus muebles tapizados.</p>
+                        <a href="#nueva-solicitud">Renovar tapizado ↗</a>
+                    </div>
+                </article>
+
+                <article class="servicio-card">
+                    <div class="servicio-foto">
+                        <img
+                            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=800&q=80"
+                            alt="Mobiliario y decoración en tonos de madera">
+                        <span class="servicio-numero">04</span>
+                    </div>
+                    <div class="servicio-info">
+                        <span class="mini-etiqueta">IDEAS NUEVAS</span>
+                        <h3>Fabricación en madera</h3>
+                        <p>Conversemos sobre ese mueble que tienes en mente.</p>
+                        <a href="#nueva-solicitud">Crear algo nuevo ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="destacado">
+            <div class="destacado-texto">
+                <span class="sobrelinea">TU MUEBLE, TU HISTORIA</span>
+                <h2>No lo cambies todavía.<br><em>¡Tal vez pueda renacer!</em></h2>
+                <p>
+                    Antes de despedirte de ese mueble especial, conversemos.
+                    Podemos revisar su estado y explorar las opciones para renovarlo.
+                </p>
+                <a class="boton boton-crema" href="#nueva-solicitud">
+                    Quiero una valoración <span>↗</span>
+                </a>
+            </div>
+            <div class="destacado-foto">
+                <img
+                    src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85"
+                    alt="Espacio interior cálido con mobiliario y materiales naturales">
+                <div class="destacado-sello">RESTAURAR<br>ES VOLVER<br>A CREER ✳</div>
+            </div>
+        </section>
+
+        <section class="proceso seccion">
+            <div class="seccion-cabecera">
+                <div>
+                    <span class="sobrelinea">FÁCIL, CLARO Y A TU RITMO</span>
+                    <h2>Así empieza <em>la historia.</em></h2>
                 </div>
+            </div>
 
-                <div class="campo">
-                    <label for="descripcion">Descripción</label>
-                    <textarea id="descripcion" name="descripcion"
-                              minlength="5" maxlength="250" required
-                              placeholder="Describe brevemente el trabajo solicitado"></textarea>
+            <div class="pasos-grid">
+                <article class="paso">
+                    <span class="paso-icono">01</span>
+                    <h3>Nos cuentas</h3>
+                    <p>Descríbenos tu idea y, si puedes, envíanos fotos del mueble.</p>
+                </article>
+                <article class="paso">
+                    <span class="paso-icono">02</span>
+                    <h3>Lo revisamos</h3>
+                    <p>Evaluamos el trabajo necesario y, cuando se requiere, coordinamos una visita.</p>
+                </article>
+                <article class="paso">
+                    <span class="paso-icono">03</span>
+                    <h3>Preparamos tu cotización</h3>
+                    <p>Te presentamos una propuesta para que decidas con tranquilidad.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="solicitudes seccion" id="solicitudes">
+            <div>
+                <span class="sobrelinea">UN ESPACIO PARA TUS IDEAS</span>
+                <h2>Las solicitudes<br>también tienen <em>su lugar.</em></h2>
+                <p>
+                    Este espacio está pensado para organizar las solicitudes de los
+                    clientes y hacer seguimiento a cada trabajo.
+                </p>
+            </div>
+            <div class="solicitudes-panel">
+                <div class="panel-icono">✳</div>
+                <h3>Gestión de solicitudes</h3>
+                <p>Consulta el módulo de solicitudes de MEB Gestión.</p>
+                <a class="boton boton-verde" href="#nueva-solicitud">
+                    Crear una solicitud ↗
+                </a>
+            </div>
+        </section>
+
+        <section class="contacto seccion" id="nueva-solicitud">
+            <div class="contacto-intro">
+                <span class="sobrelinea">HABLEMOS DE MADERA</span>
+                <h2>Cuéntanos esa idea<br>que tienes <em>en mente.</em></h2>
+                <p>
+                    Cada proyecto comienza con una conversación.
+                    Déjanos tus datos y cuéntanos qué necesitas.
+                </p>
+
+                <div class="contacto-nota">
+                    <span>✳</span>
+                    <p>Una buena idea puede convertirse en tu mueble favorito.</p>
                 </div>
+            </div>
 
-                <button type="submit">Registrar solicitud</button>
-                <p id="mensaje-formulario" role="status"></p>
-            </form>
+            <div class="formulario-panel">
+                <form id="formulario-contacto">
+                    <div class="campo">
+                        <label for="nombre">¿Cómo te llamas?</label>
+                        <input id="nombre" name="nombre" type="text"
+                            placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="ciudad">¿Dónde estás?</label>
+                        <input id="ciudad" name="ciudad" type="text"
+                            placeholder="Ej. Palmira" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="tipo-trabajo">¿Qué necesitas?</label>
+                        <select id="tipo-trabajo" name="tipo-trabajo" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="Restauración">Restauración</option>
+                            <option value="Pintura y acabados">Pintura y acabados</option>
+                            <option value="Tapizado">Tapizado</option>
+                            <option value="Fabricación en madera">Fabricación en madera</option>
+                            <option value="Otro trabajo">Otro trabajo</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="descripcion">Cuéntanos un poquito más</label>
+                        <textarea id="descripcion" name="descripcion"
+                            placeholder="¿Qué mueble es? ¿Qué te gustaría hacerle?"
+                            required></textarea>
+                    </div>
+
+                    <button class="boton boton-verde boton-enviar" type="submit">
+                        Preparar mensaje por WhatsApp <span>↗</span>
+                    </button>
+
+                    <p class="aviso-formulario">
+                        El formulario abrirá WhatsApp con los datos que escribas.
+                    </p>
+                    <p id="mensaje-formulario" class="mensaje-formulario"
+                        role="status" aria-live="polite"></p>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer class="pie-pagina">
-        <p>&copy; 2026 MEB Gestión · Muebles El Bosque</p>
+    <footer class="pie">
+        <div class="pie-superior">
+            <a class="marca marca-pie" href="#inicio">
+                <div class="logo-nuevo">
+                    <span class="logo-m">M</span>
+                    <span class="logo-b">B</span>
+                    <span class="logo-mesa"></span>
+                </div>
+                <div class="marca-texto">
+                    <strong>MEB <span>Gestión</span></strong>
+                    <small>MUEBLES EL BOSQUE</small>
+                </div>
+            </a>
+            <p>La madera vive. Las historias también. <span>✳</span></p>
+            <a href="#inicio" class="volver-arriba">VOLVER ARRIBA ↑</a>
+        </div>
+        <div class="pie-inferior">
+            <span>© 2026 Muebles El Bosque · MEB Gestión</span>
+            <span>Hecho con cuidado y amor por la madera.</span>
+        </div>
     </footer>
 
-    <script type="module" src="js/app.js"></script>
+    <script>
+        document.getElementById("formulario-contacto").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value.trim();
+            const ciudad = document.getElementById("ciudad").value.trim();
+            const servicio = document.getElementById("tipo-trabajo").value;
+            const descripcion = document.getElementById("descripcion").value.trim();
+            const mensaje = document.getElementById("mensaje-formulario");
+
+            if (!nombre || !ciudad || !servicio || !descripcion) {
+                mensaje.textContent = "Por favor, completa todos los campos.";
+                return;
+            }
+
+            /*
+              IMPORTANTE:
+              Reemplaza el número de ejemplo por el WhatsApp oficial
+              de Muebles El Bosque, con indicativo de país y sin + ni espacios.
+              Ejemplo de formato para Colombia: 573001234567
+            */
+            const telefono = "3153758032";
+
+            const texto = [
+                "Hola, Muebles El Bosque. Quiero consultar por un trabajo.",
+                "",
+                "Nombre: " + nombre,
+                "Ciudad: " + ciudad,
+                "Servicio: " + servicio,
+                "Descripción: " + descripcion
+            ].join("\n");
+
+            mensaje.textContent = "Abriendo WhatsApp para preparar tu consulta...";
+
+            const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(texto);
+            window.open(url, "_blank", "noopener,noreferrer");
+        });
+    </script>
+
 </body>
 </html>
